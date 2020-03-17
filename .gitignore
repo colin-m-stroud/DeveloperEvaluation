@@ -1,0 +1,16 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/DeveloperEvaluation.API/bin/Debug/netcoreapp3.1
+/DeveloperEvaluation.API/node_modules
+/DeveloperEvaluation.API/obj
+/DeveloperEvaluation.API/DeveloperEvaluation.API.csproj.user
+/DeveloperEvaluation.API/package-lock.json
+/DeveloperEvaluation.Common/bin/Debug/netcoreapp3.1
+/DeveloperEvaluation.Common/obj
+/DeveloperEvaluation.Services/bin/Debug/netcoreapp3.1
+/DeveloperEvaluation.Services/obj
+/DeveloperEvaluation.Tests/bin/Debug/netcoreapp3.1
+/DeveloperEvaluation.Tests/obj

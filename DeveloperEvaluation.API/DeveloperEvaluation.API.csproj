@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>DeveloperEvaluation.API</AssemblyName>
+    <RootNamespace>DeveloperEvaluation.API</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="tsconfig.json" />
+  </ItemGroup>
+  
+  <PropertyGroup>
+    <!-- Makes the TypeScript compilation task a no-op -->
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <None Remove="src\CustomTypes.ts" />
+    <None Remove="src\EvaluationMain.tsx" />
+    <None Remove="src\index.ts" />
+    <None Remove="src\Utilities.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="src\EvaluationMain.tsx" />
+    <TypeScriptCompile Include="src\Utilities.ts" />
+    <TypeScriptCompile Include="src\CustomTypes.ts" />
+    <TypeScriptCompile Include="src\index.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="tsconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="3.1.2" />
+  </ItemGroup>
+
+</Project>
