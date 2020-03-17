@@ -14,7 +14,8 @@ namespace DeveloperEvaluation.Services.ItemSummaries
         {
             return GetSubItems(itemNumber)
                 ?.SelectMany(item => TransformSubItems(item, item.GetSubItems()))
-                ?.ToArray();
+                ?.ToArray()
+                ?? new SubItemSummary[0];
         }
 
         private IEnumerable<Item> GetSubItems(string itemNumber)
